@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsibility - Responsibility & Civic Sense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 Responsibility</h1>
+            <div class="progress-bar">
+                <div class="progress" style="width: 25%"></div>
+            </div>
+            <p class="progress-text">Page 1 of 4</p>
+        </header>
+
+        <main>
+            <section class="content-section">
+                <h2>What is Responsibility?</h2>
+                <p>Responsibility means being accountable for your actions and duties. As a student, it means:</p>
+                
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <h3>✅ School Responsibility</h3>
+                        <ul>
+                            <li>Completing homework on time</li>
+                            <li>Attending classes regularly</li>
+                            <li>Respecting teachers</li>
+                        </ul>
+                    </div>
+                    <div class="example-card">
+                        <h3>🏠 Home Responsibility</h3>
+                        <ul>
+                            <li>Helping with chores</li>
+                            <li>Keeping your room clean</li>
+                            <li>Taking care of belongings</li>
+                        </ul>
+                    </div>
+                    <div class="example-card">
+                        <h3>🎯 Personal Responsibility</h3>
+                        <ul>
+                            <li>Managing your time</li>
+                            <li>Being honest</li>
+                            <li>Learning from mistakes</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-section">
+                <h3>💡 Quick Quiz: Are you Responsible?</h3>
+                <div class="quiz-container">
+                    <p>Do you complete your homework before playing?</p>
+                    <button class="quiz-btn" onclick="quizAnswer(true)">✅ Yes</button>
+                    <button class="quiz-btn" onclick="quizAnswer(false)">❌ No</button>
+                    <p id="quiz-result" class="quiz-result"></p>
+                </div>
+            </section>
+        </main>
+
+        <nav class="page-nav">
+            <button class="btn-back" onclick="window.history.back()">← Back</button>
+            <a href="civic-sense.html" class="btn-next">Next →</a>
+        </nav>
+
+        <footer>
+            <p>&copy; 2024 Student Learning Portal</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

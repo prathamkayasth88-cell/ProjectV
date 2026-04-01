@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Responsibility & Civic Sense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Action Time!</h1>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%"></div>
+            </div>
+            <p class="progress-text">Page 3 of 4</p>
+        </header>
+
+        <main>
+            <section class="content-section">
+                <h2>Your Responsibility Checklist</h2>
+                <p>Complete these tasks and track your progress!</p>
+                
+                <div class="checklist-container">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="task1" onchange="updateScore()">
+                        <label for="task1">Complete today's homework</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="task2" onchange="updateScore()">
+                        <label for="task2">Clean your study table</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="task3" onchange="updateScore()">
+                        <label for="task3">Don't litter today</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="task4" onchange="updateScore()">
+                        <label for="task4">Help someone at home</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="task5" onchange="updateScore()">
+                        <label for="task5">Switch off unused lights</label>
+                    </div>
+                </div>
+
+                <div class="score-container">
+                    <h3>Your Score: <span id="score">0</span>/5</h3>
+                    <div class="score-bar">
+                        <div class="score-progress" id="score-progress" style="width: 0%"></div>
+                    </div>
+                    <p id="score-message">Keep going! Complete more tasks!</p>
+                </div>
+            </section>
+
+            <section class="challenge-section">
+                <h3>🌟 Daily Challenge</h3>
+                <p>Pick one civic sense habit to practice today:</p>
+                <select id="challenge" class="challenge-select">
+                    <option>Choose a challenge...</option>
+                    <option>Pick up litter I see</option>
+                    <option>Help a classmate</option>
+                    <option>Wait patiently in line</option>
+                    <option>Save water while brushing</option>
+                </select>
+                <button class="btn-challenge" onclick="acceptChallenge()">✅ I Accept This Challenge!</button>
+                <p id="challenge-result"></p>
+            </section>
+        </main>
+
+        <nav class="page-nav">
+            <a href="civic-sense.html" class="btn-back">← Back</a>
+            <a href="completion.html" class="btn-next">Finish →</a>
+        </nav>
+
+        <footer>
+            <p>&copy; 2024 Student Learning Portal</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
